@@ -8,6 +8,9 @@ function Router({ }: RouterProps) {
     return (
         <BrowserRouter>
             <Switch>
+                <Route path="/cryptotracker">
+                    <Coins />
+                </Route>
                 <Route path="/:coinId">
                     <Coin />
                 </Route>
